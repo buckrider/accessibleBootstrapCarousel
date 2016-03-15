@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="A fully-responsive, accessible Bootstrap carousel demo">
+    <meta name="author" content="Jake Sikma">
+
+    <title>Accessible Bootstrap Carousel Demo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="slideshow.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Play/Pause -->
+      <!-- <div id="carouselButtons">
+        <button id="playButton" type="button" class="btn btn-default btn-xs">
+            <span class="glyphicon glyphicon-play"></span>
+         </button>
+        <button id="pauseButton" type="button" class="btn btn-default btn-xs">
+            <span class="glyphicon glyphicon-pause"></span>
+        </button>
+      </div> -->
+      <!-- Controls -->
+      <div class="play-pause">
+        <button id="playButton">Play</button>
+        <button id="pauseButton">Pause</button>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+      </ol>
+      <ul class="carousel-inner" role="listbox">
+        <li class="item active">
+          <img src="images/ship-horizon.jpg" alt="Sailing ship" class="img-responsive">
+          
+            <div class="carousel-caption row">
+              <div class="col-sm-6 caption-bg">
+              <div class="caption-text">
+              <h1>A fully-responsive carousel</h1>
+              <p>Shrink your browser to see its design change on mobile widths.</p>
+              <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">View Program Details</a></p> -->
+              </div>
+          </div>
+          </div>
+
+        </li>
+        <li class="item">
+          <img src="images/mount-fuji.jpg" alt="Mount Fuji" class="img-responsive">
+           
+              <div class="carousel-caption row">
+              <div class="col-sm-6 caption-bg">
+              <div class="caption-text">
+              <h1>Text is vertically centered</h1>
+              <p>This is achieved on mobile with a fixed height &amp; CSS transforms...</p>
+            </div>
+            </div>
+
+        </div>
+        </li>
+        <li class="item">
+          <img src="images/shark-underwater.jpg" alt="Hungry shark" class="img-responsive">
+         
+              <div class="carousel-caption row">
+              <div class="col-sm-6 caption-bg">
+              <div class="caption-text">
+              <h1>...and text/image size reqs</h1>
+              <p>(Requirements that you'll have to negotiate with your designers :P)</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Plus room for a button!</a></p>
+            </div>
+            </div>
+          </div>
+
+        </li>
+        <li class="item">
+          <img src="images/speedometer.jpg" alt="Speedometer" class="img-responsive">
+         
+              <div class="carousel-caption row">
+              <div class="col-sm-6 caption-bg">
+              <div class="caption-text">
+              <h1>Title character limit is 28.</h1>
+              <p>...&amp; the caption character limit is somewhat larger at 68 characters</p>
+            </div>
+            </div>
+          </div>
+
+        </li>
+        <li class="item">
+          <img src="images/forest-fog.jpg" alt="Fog moves in on forest" class="img-responsive">
+         
+              <div class="carousel-caption row">
+              <div class="col-sm-6 caption-bg">
+              <div class="caption-text">
+              <h1>Yes, this uses Bootstrap</h1>
+              <p>But now it meets web accessibility standards.</p>
+              <p><a class="btn btn-lg btn-primary" href="https://www.w3.org/WAI/intro/accessibility.php" role="button">Learn more here</a></p>
+            </div>
+            </div>
+          </div>
+
+        </li>
+        <li class="item">
+          <img src="images/motorcycle-front-wheelie.jpg" alt="Motorcycle stunt" class="img-responsive">
+         
+              <div class="carousel-caption row">
+              <div class="col-sm-6 caption-bg">
+              <div class="caption-text">
+              <h1>Go ahead, try tab indexing</h1>
+              <p>It is now in proper order: play/pause, previous, next, slide content</p>
+              <a class="btn btn-lg btn-primary" href="#" role="button">This is slide content</a></p>
+            </div>
+            </div>
+          </div>
+
+        </li>
+      </ul>
+    </div>
+</body>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript ================================================== -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script>
+    $(function () {
+        $('.carousel').carousel({
+          interval:5000
+        });
+        $('#playButton').click(function () {
+            $('.carousel').carousel('cycle');
+        });
+        $('#pauseButton').click(function () {
+            $('.carousel').carousel('pause');
+        });
+    });
+
+</script>
+</html>
